@@ -1,6 +1,6 @@
 {
   "name": "endp-docs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Standalone OpenAPI JSON endpoint contract fetcher and schema parser for AI coding agents and developers with compact mode to reduce token usage and markdown mode for better readability",
   "main": "dist/bin.js",
   "bin": {
