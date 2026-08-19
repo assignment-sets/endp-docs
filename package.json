@@ -1,0 +1,48 @@
+{
+  "name": "endp-docs",
+  "version": "1.0.0",
+  "description": "Standalone OpenAPI JSON endpoint contract fetcher and schema parser for AI coding agents and developers with compact mode to reduce token usage and markdown mode for better readability",
+  "main": "dist/bin.js",
+  "bin": {
+    "endp-docs": "./dist/bin.js",
+    "endp": "./dist/bin.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsup && chmod +x dist/bin.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "cli",
+    "ai-agents",
+    "rest-api",
+    "schemas",
+    "endpoint",
+    "contract-fetcher",
+    "llm-context"
+  ],
+  "author": {
+    "name": "hellogrb",
+    "email": "mondalgourab140@gmail.com",
+    "url": "https://github.com/assignment-sets"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "cosmiconfig": "^10.0.0",
+    "endp-docs": "link:"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
