@@ -12,10 +12,22 @@
     "README.md"
   ],
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assignment-sets/endp-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assignment-sets/endp-docs/issues"
+  },
+  "homepage": "https://github.com/assignment-sets/endp-docs#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup && chmod +x dist/bin.js",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepublishOnly": "pnpm test && pnpm build"
   },
   "keywords": [
     "openapi",
@@ -36,8 +48,7 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^15.0.0",
-    "cosmiconfig": "^10.0.0",
-    "endp-docs": "link:"
+    "cosmiconfig": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

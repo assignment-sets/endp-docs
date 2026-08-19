@@ -216,9 +216,6 @@ importers:
       cosmiconfig:
         specifier: ^10.0.0
         version: 10.0.0
-      endp-docs:
-        specifier: 'link:'
-        version: 'link:'
     devDependencies:
       '@types/node':
         specifier: ^22.0.0
