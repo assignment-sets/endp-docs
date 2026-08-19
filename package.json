@@ -12,6 +12,7 @@
     "README.md"
   ],
   "type": "module",
+  "packageManager": "pnpm@10.6.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/assignment-sets/endp-docs.git"
