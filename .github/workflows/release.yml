@@ -39,7 +39,7 @@ jobs:
           pnpm build
 
       - name: Publish to NPM (OIDC Trusted Publisher)
-        run: pnpm publish --access public --no-git-checks --provenance
+        run: npm publish --access public --provenance
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
