@@ -36,10 +36,8 @@ jobs:
           pnpm test
           pnpm build
 
-      - name: Publish to NPM
-        run: pnpm publish --access public --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish to NPM (OIDC Trusted Publisher)
+        run: pnpm publish --access public --no-git-checks --provenance
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
